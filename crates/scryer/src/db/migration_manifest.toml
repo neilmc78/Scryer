@@ -2715,6 +2715,23 @@ file = "postgres/migrations/0264_full_admin_manage_lists.sql"
 engine = "postgres"
 scope = "all"
 
+[[migration]]
+version = 265
+description = "poster overlays"
+checksum_algo = "blake3"
+
+[[migration.steps]]
+kind = "sql"
+file = "migrations/0265_poster_overlays.sql"
+engine = "sqlite"
+scope = "all"
+
+[[migration.steps]]
+kind = "sql"
+file = "postgres/migrations/0265_poster_overlays.sql"
+engine = "postgres"
+scope = "all"
+
 [[baseline]]
 through_version = 254
 file = "baselines/0254_baseline.sql"
